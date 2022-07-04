@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
+:root{
+  --font-corpo: 'roboto';
+  --font-destaque: 'poppins';
+}
 /* Configurações gerais */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 130px;
+  scroll-padding-top: 120px;
   /*incluir em navegação de uma página só*/
 }
 
@@ -25,52 +28,73 @@ header {
   top: 0;
   z-index: 9999;
 }
-
+/*começo do nav*/
 nav {
   background-image: linear-gradient(to right, #1e3c72, #2a5298);
 }
 
-.navbar-collapse a:hover {
-  background-color: #05224d;
-  color: white;
+
+.navTxt{ /*personalizando o texto do nav*/
+  font-family: var(--font-destaque);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: white;  
   border-radius: 6px;
 }
+.navTxt:hover {
+  background-color: #05224d;
+  color: rgb(226, 214, 214);
+  border-radius: 6px;
+  transition-duration: 1s;  
+}
+.logo:hover{
+  background-color: #05224d;
+  color: rgb(226, 214, 214);
+  border-radius: 6px;
+  transition-duration: 2s;  
+}
 
+/* fim da congif go nav*/
 /* Fim das configurações gerais */
+
+.divSombra{
+  box-shadow: 0px 2px 4px 4px black;
+}
+
 .navbar-toggler {
   border-color: white;
 
 }
 
-
-
 .apresentacao h1 {
-  font-size: 48px;
-  padding: 10px;
+  font-size: 2.4rem;
+  line-height: 2.2rem;  
+  font-weight: 600;
+  font-family: var(--font-destaque);  
+  padding-bottom: 25px;  
 
 }
 
 .apresentacao p {
-  padding-left: 40px;
-  padding-right: 15px;
-}
-
-.campoUm img {
-  /* border-radius: 0 250px 0 250px ;
-    margin: auto; */
+  padding-left: 25px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: var(--font-corpo);
+  line-height: 1.1rem;
 }
 
 .campoUm {
   /* background-image: linear-gradient(to right, #1e3c72, #2a5298);   */
   background-color: #112140;
-  box-shadow: 0 0 20px 0 black;
 }
 
 
 .imagem-campoum {
   height: 100%;
   border-radius: 5px 0 0 350px;
-  box-shadow: 0px 0px 4px 5px #0416386c;
+  box-shadow: -5px 2px 2px 3px #050e1fa4;
 }
 
 .apresentacao {
@@ -78,13 +102,7 @@ nav {
   justify-content: center;
 }
 
-.apresentacao h1 {
-  font-size: 48px;
-  padding: 10px;
 
-}
-
-.apresentacao p {}
 
 #btnVerMais {
   text-decoration: none;
@@ -95,15 +113,114 @@ nav {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
-  box-shadow: 2px 2px 4px 1px #0713298f;
+  font-family: var(--font-destaque);
+  box-shadow: 2px 2px 4px 3px #0000006c;
   margin: auto;
+  border: none;
 }
 
 #btnVerMais:hover {
   color: white;
-  background-color: #1749a5;
+  background-color: #103881;
   text-decoration: underline;
 }
+
+
+
+/* Início do main */
+
+/* Iniciando o campo de serviços */
+
+.servicos {
+  background-color: #EDEDED;
+  text-align: center;
+
+}
+
+.servicos h2 {
+  color: #031b47;
+  font-size: 2rem;
+  font-family: 'poppins';
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+.servicos p {
+  padding-left: 25px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: var(--font-corpo);
+  line-height: 1.1rem;
+}
+
+.servicos img {
+  margin-bottom: 11px;
+}
+
+.servicos article {
+  margin-bottom: 58px;
+}
+/*fim de servicos*/
+
+/*comeco dos clientes ja atendidos*/
+.chamada-cliente {
+  background-image: linear-gradient(to right, #124593, #09234A);
+  text-align: center;  
+}
+.chamada-cliente h2{
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: var(--font-destaque);
+  margin-bottom: -15px; /*gambiarra para juntar os dois campos*/
+}
+.corDeFundo{ /*cor de fundo do slide*/
+  background-image: linear-gradient(to right, #124593, #09234A);
+}
+
+/*fim dos cliente ja atendidos*/
+.sobreNos {
+  background-color: #EDEDED;  
+  height: 250px;
+  align-items: center;
+}
+.sobreNos article{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.sobreNos h2{
+  color: black;
+  font-family: var(--font-destaque);
+  font-weight: 600;
+  font-size: 2rem;
+ 
+}
+.sobreNos p {
+  color: black;
+  font-family: var(--font-corpo);
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+
+/* Section contato */
+.contato {
+  background-color: #112140;
+  color: white;
+}
+.contato h2{
+  font-family: var(--font-destaque);
+  font-weight: 600;
+  font-size: 2rem;
+ 
+}
+.contato span{
+  font-family: var(--font-destaque);
+}
+
+/*fim da section contato*/
+
+/* fim do main */
+/* Inicio do footer */
 
 @media (min-width: 1400px) {
   .imagem-campoum {
@@ -152,52 +269,6 @@ nav {
   }
 
   #btnVerMais {
-    padding: 12px 24px;
+    padding: 0.8rem 1.6rem;
   }
 }
-
-
-/* Início do main */
-
-/* Iniciando o campo de serviços */
-
-.servicos {
-  background-color: #EDEDED;
-  text-align: center;
-
-}
-
-.servicos h2 {
-  color: #031b47;
-}
-
-.servicos img {
-  margin-bottom: 11px;
-}
-
-.servicos article {
-  margin-bottom: 58px;
-}
-
-.chamada-cliente {
-  background-image: linear-gradient(to right, #124593, #09234A);
-  text-align: center;
-  color: white;
-  padding: 30px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.sobre {
-  background-image: linear-gradient(to right, #124593, #09234A);
-}
-
-/* fim do main */
-
-/* Section contato */
-.contato {
-  background-color: #112140;
-  color: white;
-}
-
-/* Inicio do footer */
