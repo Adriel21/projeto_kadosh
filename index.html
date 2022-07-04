@@ -121,31 +121,33 @@
 		</section>
 		<section class="p-5 contato">
 			<h2 class="text-center">Se preferir, nos envie sua solicitação por email</h2>
-			<div class="divinput pt-5">
-				<label for="exampleFormControlInput1" class="">Nome:</label>
-				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="insira seu nome ou da sua empresa">
-			  </div>
-			  <div class="divinput pt-3">
-				<label for="exampleFormControlInput2" class="">Email:</label>
-				<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-			  </div>
-			  <div class="divinput pt-3">
-				<label for="exampleFormControlInput3" class="form-label">Digite seu telefone:</label>
-				<input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="(00) 00000-0000">
-			  </div>
-			  <div class="divinput pt-3">
-				<label for="exampleFormControlSelect" class="form-label">Selecione o motivo da solicitação</label>
-				<select name="" id="exampleFormControlSelect" class="form-control">
-					<option value="">selecione uma opção</option>
-					<option value="">Orçamento</option>
-					<option value="">Dúvidas sobre serviços</option>
-					<option value="">Feedback</option>
-					<option value="">Outros</option>
-			  </div>
-			  <div class="divinput mt-2 mb-3">
-				<textarea class="form-control mt-3" id="exampleFormControlTextarea" rows="5" placeholder="Escreva sua mensagem"></textarea>
-			  </div>
-			  <div class="divinput mt-4"><button type="submit" class="btn btn-primary form-control">Enviar mensagem</button></div>
+			<form action="https://formspree.io/f/xrgjwbag" method="POST" id="my-form">
+				<div class="divinput pt-5">
+					<label for="Nome" class="">Nome:</label>
+					<input type="name" class="form-control" name="Nome" id="Nome" placeholder="insira seu nome ou da sua empresa" required>
+				  </div>
+				  <div class="divinput pt-3">
+					<label for="Email" class="">Email:</label>
+					<input type="email" class="form-control"  name="Email" id="Email" placeholder="name@example.com" required>
+				  </div>
+				  <div class="divinput pt-3">
+					<label for="Telefone" class="form-label">Digite seu telefone:</label>
+					<input type="tel" class="form-control"  name="Telefone" id="Telefone" placeholder="(00) 00000-0000" required>
+				  </div>
+				  <div class="divinput pt-3">
+					<label for="Motivo" class="form-label">Selecione o motivo da solicitação</label>
+					<select id="Motivo"  name="Motivo" class="form-control" required>
+						<option value="">selecione uma opção</option>
+						<option value="Orçamento">Orçamento</option>
+						<option value="Dúvidas sobre serviços">Dúvidas sobre serviços</option>
+						<option value="Feedback">Feedback</option>
+						<option value="Outros">Outros</option>
+				  </div>
+				  <div class="divinput mt-2 mb-3">
+					<textarea class="form-control mt-4"  name="exampleFormControlTextarea" id="exampleFormControlTextarea" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+				  </div>
+				  <div class="divinput mt-4"><button type="submit" class="btn btn-primary form-control" id="my-form-button">Enviar mensagem</button></div>
+			</form>
 		</section>
 
 		<footer>
