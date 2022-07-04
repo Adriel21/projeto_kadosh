@@ -162,11 +162,11 @@ nav {
 /*fim de servicos*/
 
 /*comeco dos clientes ja atendidos*/
-.chamada-cliente {
-  background-image: linear-gradient(to right, #124593, #09234A);
-  text-align: center;  
+.chamada-cliente{
+  border-bottom:solid 1px rgba(255, 255, 255, 0.144);
 }
 .chamada-cliente h2{
+  text-align: center;
   color: white;
   padding: 30px;
   font-weight: bold;
