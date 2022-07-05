@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  /* background-color: #8AA6A3; */
+  background-color: #EDEDED;
 }
 
 header,
@@ -163,43 +163,47 @@ nav {
 
 /*comeco dos clientes ja atendidos*/
 .chamada-cliente{
-  border-bottom:solid 1px rgba(255, 255, 255, 0.144);
+  /* border-bottom:solid 1px rgba(25, 16, 80, 0.144); */
 }
 .chamada-cliente h2{
+  background-color: #EDEDED;
   text-align: center;
-  color: white;
+  color: #031b47;
   padding: 30px;
   font-weight: bold;
   font-size: 1.8rem;
   font-family: var(--font-destaque);
   margin-bottom: -15px; /*gambiarra para juntar os dois campos*/
 }
-.corDeFundo{ /*cor de fundo do slide*/
-  background-image: linear-gradient(to right, #2859a3, #040d1a); 
+.gallery{
+  background-color: #EDEDED;
+}
+.container{
+  margin-bottom: 15px;
 }
 
 /*fim dos cliente ja atendidos*/
 .sobreNos {
-  background-color: #EDEDED;  
+  background-image: linear-gradient(to right, #2859a3, #12253f); 
   height: 250px;
   align-items: center;
 }
 .sobreNos article{
-  padding-left: 5%;
-  padding-right: 5%;
+  max-width: 800px;
 }
 .sobreNos h2{
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: var(--font-destaque);
   font-weight: 600;
   font-size: 2rem;
  
 }
 .sobreNos p {
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: var(--font-corpo);
   font-size: 1.1rem;
   line-height: 1.2rem;
+  
 }
 
 /* Section contato */
