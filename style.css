@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
+:root{
+  --font-corpo: 'roboto';
+  --font-destaque: 'poppins';
+}
+
+/* Configurações gerais */teste
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+  /*incluir em navegação de uma página só*/
+}
+
+body {
+  /* background-color: #8AA6A3; */
+}
+
+header,
+main,
+footer,
+section {
+  /* background-color: #124593; */
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+nav {
+  background-image: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.navbar-collapse a:hover {
+  background-color: #05224d;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Fim das configurações gerais */
+.navbar-toggler {
+  border-color: white;
+
+}
+
+
+
+.apresentacao h1 {
+  font-size: 48px;
+  padding: 10px;
+
+}
+
+.apresentacao p {
+  padding-left: 40px;
+  padding-right: 15px;
+}
+
+.campoUm img {
+  /* border-radius: 0 250px 0 250px ;
+    margin: auto; */
+}
+
+.campoUm {
+  /* background-image: linear-gradient(to right, #1e3c72, #2a5298);   */
+  background-color: #112140;
+  box-shadow: 0 0 20px 0 black;
+}
+
+
+.imagem-campoum {
+  height: 100%;
+  border-radius: 5px 0 0 350px;
+  box-shadow: 0px 0px 4px 5px #0416386c;
+}
+
+.apresentacao {
+  display: grid;
+  justify-content: center;
+}
+
+.apresentacao h1 {
+  font-size: 48px;
+  padding: 10px;
+
+}
+
+.apresentacao p {}
+
+#btnVerMais {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  background-color: #0059ff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px 1px #0713298f;
+  margin: auto;
+}
+
+#btnVerMais:hover {
+  color: white;
+  background-color: #1749a5;
+  text-decoration: underline;
+}
+
+@media (min-width: 1400px) {
+  .imagem-campoum {
+    border-radius: 5px 0 0 500px;
+  }
+
+  .apresentação {
+    display: grid;
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: 1036px) {
+  .lampada {
+    width: 550px;
+    /* padding-right: 40px;  */
+  }
+
+  .apresentacao {
+    /* margin-top: -75px;       */
+  }
+
+  .apresentacao p {
+    padding-left: 50px;
+  }
+
+
+}
+
+@media (min-width:880px) and (max-width: 1035px) {
+  .lampada {
+    width: 480px;
+    /* padding-right: 35px;  */
+  }
+
+  #btnVerMais {
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 879px) {
+  .lampada {
+    width: 390px;
+    /* padding-right: 60px;  */
+  }
+
+  #btnVerMais {
+    padding: 12px 24px;
+  }
+}
+
+
+/* Início do main */
+
+/* Iniciando o campo de serviços */
+
+.servicos {
+  background-color: #EDEDED;
+  text-align: center;
+
+}
+
+.servicos h2 {
+  color: #031b47;
+}
+
+.servicos img {
+  margin-bottom: 11px;
+}
+
+.servicos article {
+  margin-bottom: 58px;
+}
+
+.chamada-cliente {
+  background-image: linear-gradient(to right, #124593, #09234A);
+  text-align: center;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sobre {
+  background-image: linear-gradient(to right, #124593, #09234A);
+}
+
+/* fim do main */
+
+/* Section contato */
+.contato {
+  background-color: #112140;
+  color: white;
+  margin: 0 auto
+}
+  /* .contato input, .contato select, .contato textarea {
+    width: 50vw;
+    margin: 0 auto;
+  } */
+
+
+
+  @media (min-width: 720px) {
+    .divinput {
+      padding-right: 15%;
+      padding-left: 15%;
+    }
+
+  }
+
+    /* .contato label {
+      width: 50vw;
+      margin: 0 auto;
+    }
+} */
+
+/* Inicio do footer */
