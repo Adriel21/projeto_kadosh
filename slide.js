@@ -1,10 +1,10 @@
-const controls = document.querySelectorAll(".controle");
+const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 
-controls.forEach((controle) => {
-  controle.addEventListener("click", (e) => {
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
     isLeft = e.target.classList.contains("arrow-left");
 
     if (isLeft) {

@@ -34,23 +34,6 @@ nav {
   background-image: linear-gradient(to right, #1e3c72, #2a5298);
 }
 
-
-.navTxt{ /*personalizando o texto do nav*/
-  font-family: var(--font-destaque);
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 0.03rem;
-  text-transform: uppercase;
-  color: white;  
-  border-radius: 6px;
-}
-.navTxt:hover {
-  background-color: #05224d;
-  color: rgb(226, 214, 214);
-  border-radius: 6px;
-  transition-duration: 1s;  
-}
-
 .navbar-collapse a:hover {
   background-color: #05224d;
   color: white;
