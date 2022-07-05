@@ -210,11 +210,11 @@ nav {
     margin: 0 auto;
   }
 
-  @media (min-width: 800px) {
+  /* @media (min-width: 800px) {
     .divinput {
       padding-right: 15%;
       padding-left: 15%;
-    }
-}
+    } */
+
 
 /* Inicio do footer */
