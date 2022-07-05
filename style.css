@@ -175,7 +175,7 @@ nav {
   margin-bottom: -15px; /*gambiarra para juntar os dois campos*/
 }
 .corDeFundo{ /*cor de fundo do slide*/
-  background-image: linear-gradient(to right, #124593, #09234A);
+  background-image: linear-gradient(to right, #2859a3, #040d1a); 
 }
 
 /*fim dos cliente ja atendidos*/
