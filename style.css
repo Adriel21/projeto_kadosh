@@ -196,6 +196,18 @@ nav {
   background-image: linear-gradient(to right, #124593, #09234A);
 }
 
+  .galeria {
+  background-color: #0059ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  }
+    .galeria:hover{
+      color: white;
+      text-decoration: underline;
+    }
+
 /* fim do main */
 
 /* Section contato */
