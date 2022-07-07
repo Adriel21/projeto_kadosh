@@ -197,14 +197,14 @@ nav, footer {
   background-image: linear-gradient(to right, #124593, #09234A);
 }
 
-  .galeria {
+  .botao-galeria {
   background-color: #0059ff;
   color: white;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   }
-    .galeria:hover{
+    .botao-galeria:hover{
       color: white;
       text-decoration: underline;
     }
@@ -246,3 +246,12 @@ footer a {
   list-style: none;
   padding: 0;
  }
+ /* Fim do footer */
+
+ /* Galeria */
+ .galeria{
+  display: grid;  
+  grid-template-columns: repeat(auto-fit,  minmax(200px, auto));
+  gap: 5px; /*Espaço entre as colunas*/
+  text-align: center;
+}
