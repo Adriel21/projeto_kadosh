@@ -30,8 +30,9 @@ header {
   z-index: 9999;
 }
 
-nav {
+nav, footer {
   background-image: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
 }
 
 .navbar-collapse a:hover {
@@ -238,3 +239,10 @@ nav {
 } */
 
 /* Inicio do footer */
+footer a {
+  color: white;
+}
+ footer ul {
+  list-style: none;
+  padding: 0;
+ }
