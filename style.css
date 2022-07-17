@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
-:root{
+
+:root {
   --font-corpo: 'roboto';
   --font-destaque: 'poppins';
 }
@@ -30,7 +31,8 @@ header {
   z-index: 9999;
 }
 
-nav, footer {
+nav,
+footer {
   background-image: linear-gradient(to right, #1e3c72, #2a5298);
   color: white;
 }
@@ -197,17 +199,18 @@ nav, footer {
   background-image: linear-gradient(to right, #124593, #09234A);
 }
 
-  .botao-galeria {
+.botao-galeria {
   background-color: #0059ff;
   color: white;
   border: none;
   border-radius: 6px;
   font-weight: bold;
-  }
-    .botao-galeria:hover{
-      color: white;
-      text-decoration: underline;
-    }
+}
+
+.botao-galeria:hover {
+  color: white;
+  text-decoration: underline;
+}
 
 /* fim do main */
 
@@ -217,22 +220,23 @@ nav, footer {
   color: white;
   margin: 0 auto
 }
-  /* .contato input, .contato select, .contato textarea {
+
+/* .contato input, .contato select, .contato textarea {
     width: 50vw;
     margin: 0 auto;
   } */
 
 
 
-  @media (min-width: 720px) {
-    .divinput {
-      padding-right: 15%;
-      padding-left: 15%;
-    }
-
+@media (min-width: 720px) {
+  .divinput {
+    padding-right: 15%;
+    padding-left: 15%;
   }
 
-    /* .contato label {
+}
+
+/* .contato label {
       width: 50vw;
       margin: 0 auto;
     }
@@ -242,16 +246,22 @@ nav, footer {
 footer a {
   color: white;
 }
- footer ul {
+
+footer ul {
   list-style: none;
   padding: 0;
- }
- /* Fim do footer */
+}
 
- /* Galeria */
- .galeria{
-  display: grid;  
-  grid-template-columns: repeat(auto-fit,  minmax(200px, auto));
-  gap: 5px; /*Espaço entre as colunas*/
-  text-align: center;
+/* Fim do footer */
+
+/* Galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit,  minmax(200px, auto)); */
+  gap: 20px;
+  /*Espaço entre as colunas*/
+  margin-top: 25px;
+
 }
