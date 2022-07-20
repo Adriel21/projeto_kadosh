@@ -207,6 +207,10 @@ footer {
 .sobre {
   background-image: linear-gradient(to right, #124593, #09234A);
 }
+.sobre p{  
+  max-width: 100ch;
+  margin: auto;
+}
 
 .botao-galeria {
   background-color: #0059ff;
