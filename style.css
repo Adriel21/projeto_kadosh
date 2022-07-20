@@ -62,22 +62,17 @@ footer {
   padding-right: 15px;
 }
 
-.campoUm img {
-  /* border-radius: 0 250px 0 250px ;
-    margin: auto; */
-}
 
 .campoUm {
   /* background-image: linear-gradient(to right, #1e3c72, #2a5298);   */
   background-color: #112140;
-  box-shadow: 0 0 20px 0 black;
 }
 
 
 .imagem-campoum {
   height: 100%;
   border-radius: 5px 0 0 350px;
-  box-shadow: 0px 0px 4px 5px #0416386c;
+  box-shadow: -7px 0px 4px 5px #010a1a81;
 }
 
 .apresentacao {
@@ -91,7 +86,6 @@ footer {
 
 }
 
-.apresentacao p {}
 
 #btnVerMais {
   text-decoration: none;
