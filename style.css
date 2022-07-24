@@ -8,14 +8,14 @@
 /* Configurações gerais */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 120px;
+  scroll-padding-top: 135px;
   /*incluir em navegação de uma página só*/
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 250px;
+    scroll-padding-top: 260px;
     /*incluir em navegação de uma página só*/
   }
   
